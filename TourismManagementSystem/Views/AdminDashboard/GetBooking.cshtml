@@ -1,0 +1,204 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Payment>
+
+@{
+    ViewBag.Title = "GetBooking";
+    if (ViewBag.Role == "Admin")
+    {
+        Layout = "~/Views/Shared/_Layout_List_AdminDashboard.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_EmployeeDashboardLayout.cshtml";
+    }
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Html.Raw(TempData["SuccessMessage"])
+    </div>
+}
+
+<style>
+
+
+    .highlight-row {
+        background-color: #FFCCCC; /* Light red color */
+    }
+
+</style>
+<link href="~/Assests/CustomCSS/Pagination.css" rel="stylesheet" />
+<h2>Customer booking details.</h2>
+
+
+<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+      method="get" action="@Url.Action("GetBooking", "AdminDashboard")" >
+    <div class="input-group" >
+        <input type="text" class="form-control border-0 small" name="searchStr" value="@ViewBag.SearchStr"
+               placeholder="Search for booking.!" aria-label="Search" aria-describedby="basic-addon2" style="background-color: #ffe6ff; ">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+        </div>
+    </div>
+    <input type="hidden" name="pg" value="@ViewBag.pageNumber" />
+</form>
+
+<table class="table table-bordered " style="font-size:15px; margin-top:20px;">
+
+    <thead class="thead-dark" style="background-color:white; border: thick; text-align:center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TicketNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PackageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentDateTime)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>More Info.</th>
+
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody style="border: thick;">
+        @foreach (var item in Model)
+        {
+            if (item.StartDate.Subtract(DateTime.Now).TotalDays < 0)
+            {
+                <tr class="highlight-row">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TicketNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PackageName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PaymentDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#scrollableModal-@item.PaymentId">
+                            More Info.
+                        </button><br />
+                    </td>
+                    <td style="text-align:center; font-size:18px; color:brown; font-weight:500"><p>Old Booking</p></td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TicketNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PackageName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PaymentDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#scrollableModal-@item.PaymentId">
+                            More Info.
+                        </button><br />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Cancel Booking", "CancelBooking", new { id = item.PaymentId }, new { @class = "btn btn-info text-white" })
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+
+
+<div class="pagination" style=" margin-right:20px; justify-content:end;">
+    @if (ViewBag.pageNumber > 1)
+    {
+        <a href="@Url.Action("GetBooking", new { page = ViewBag.pageNumber - 1,searchStr = ViewBag.SearchString  })" class="page-link">Previous</a>
+    }
+
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        if (i == ViewBag.pageNumber)
+        {
+            <a href="@Url.Action("GetBooking", new { page = i,searchStr = ViewBag.SearchString })" class="page-link active">@i</a>
+        }
+        else
+        {
+            <a href="@Url.Action("GetBooking", new { page = i,searchStr = ViewBag.SearchString })" class="page-link">@i</a>
+        }
+    }
+
+    @if (ViewBag.pageNumber < ViewBag.TotalPages)
+    {
+        <a href="@Url.Action("GetBooking", new { page = ViewBag.pageNumber + 1,searchStr = ViewBag.SearchString })" class="page-link">Next</a>
+    }
+</div>
+
+
+@foreach (var item in Model)
+{
+    if (item.StartDate.Subtract(DateTime.Now).TotalDays <= 0 || item.StartDate.Subtract(DateTime.Now).TotalDays > 0)
+    {
+        <div class="modal fade" id="scrollableModal-@item.PaymentId" tabindex="-1" role="dialog" aria-labelledby="scrollableModalLabel-@item.PaymentId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="scrollableModalLabel-@item.PaymentId"><b>Ticket No.: </b>@Html.DisplayFor(modelItem => item.TicketNumber)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li><b>Package : </b>@Html.DisplayFor(modelItem => item.PackageName)</li>
+                            <li><b>Customer Name : </b>@Html.DisplayFor(modelItem => item.CustomerName)</li>
+                            <li><b>Amount Paid : </b>@Html.DisplayFor(modelItem => item.Amount)</li>
+                            <li><b>Payment Date & Time : </b>@Html.DisplayFor(modelItem => item.PaymentDateTime)</li>
+                            <li><b>Customer Contact No. : </b>@Html.DisplayFor(modelItem => item.CustomerPhoneNumber)</li>
+                            <li><b>No of Guest: </b>@Html.DisplayFor(modelItem => item.NoOfGuests)</li>
+                            <li><b>Guest's Names : </b>@Html.DisplayFor(modelItem => item.GuestNames)</li>
+                            <li><b>Starting From : </b>@Html.DisplayFor(modelItem => item.StartDate)<b> To: </b>@Html.DisplayFor(modelItem => item.EndDate)</li>
+                            <li><b>Boarding Point : </b>@Html.DisplayFor(modelItem => item.PickupPoint)</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+

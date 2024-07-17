@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_EmployeeDashboardLayout.cshtml";
+}
+
+
+<h2>Employee Dashboard</h2>
+@Html.Raw(TempData["LoginSuccessMessage"])
+@Html.Raw(ViewBag.InsertMessage)
+<h3>Welcome : @Session["EmpUserName"]</h3>
+
+
+
+

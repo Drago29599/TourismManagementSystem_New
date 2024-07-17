@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Customer>
+
+@{
+    ViewBag.Title = "GetUserById";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+
+
+@foreach (var item in Model)
+{
+    
+
+    <div class="container-md" style="border: 2px solid; width: 550px; height: 310px; border-radius: 10px;">
+        <div class="container" style="display: flex; align-items: center; margin-top:15px; margin-bottom:10px;">
+            <img src="~/Assests/Images/profile_pic.png" alt="Profile Image" style="border-radius: 50%; width: 100px; height: 100px;  top: 10px; left: 10px;">
+            <h6 style="top: 20px; left: 130px; font-size: 25px; margin-left: 20px;">@Html.DisplayFor(modelItem => item.CustomerName)</h6>
+        </div>
+        <hr />
+        
+
+            <i class="fa fa-envelope" style="margin-right:10px" aria-hidden="true"></i><b>Customer Email : </b>@Html.DisplayFor(modelItem => item.CustomerEmailId)<br />
+            <i class="fa fa-phone-square" style="margin-right:10px" aria-hidden="true"></i><b>Contact Number : </b>+91 @Html.DisplayFor(modelItem => item.CustomerPhone)<br />
+            <i class="fa fa-address-book" style="margin-right:10px" aria-hidden="true"></i><b>Residential Address : </b>@Html.DisplayFor(modelItem => item.CustomerAdress)
+        
+        <hr />
+        @Html.ActionLink("Edit My details","EditCustomer", "User", new { id = item.CustomerId }, new { @class = "btn btn-secondary" })
+        
+    </div>
+}
+
+

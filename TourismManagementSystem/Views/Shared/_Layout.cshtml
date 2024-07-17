@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - </title>
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary">
+        <div class="container">
+
+            <div class="d-flex justify-content-start">
+                @Html.ActionLink("Ocean Tourism", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+
+            <div class="collapse navbar-collapse d-sm-inline-flex ">
+                <ul class="navbar-nav flex-grow-1 justify-content-end">
+                    <li style="padding-right:35px">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li style="padding-right:35px">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li style="padding-right:35px">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+                </ul>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> Welcome to Ocean Tourism login Page
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="modal-body d-flex justify-content-between">
+                                <button type="button" class="btn btn-primary">
+                                    @Html.ActionLink("Customer Login", "Index", "LoginSingup", new { area = "" }, new { @class = "nav-link" })
+                                </button>
+
+                                <button type="button" class="btn btn-primary">
+                                    @Html.ActionLink("Admin Login", "Index", "AdminLogin", new { area = "" }, new { @class = "nav-link" })
+                                </button>
+
+                                <button type="button" class="btn btn-primary">
+                                    @Html.ActionLink("Employee Login", "Index", "EmployeeLogin", new { area = "" }, new { @class = "nav-link" })
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+
+    <hr />
+    <footer class="sticky-footer ">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Ocean Tourism 2023</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $("#loginLink").click(function (e) {
+                e.preventDefault(); // Prevent the default link behavior
+
+                // Trigger the modal manually
+                $("#loginModal").modal("show");
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

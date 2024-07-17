@@ -1,0 +1,154 @@
+﻿@model TourismManagementSystem.Models.Payment
+
+@{
+    ViewBag.Title = "AddGuest";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+<h2 style="color: #00802b">Your Payment is successfully</h2>
+
+@using (Html.BeginForm("BuyPackage","User",FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Please proceed to purchase the Package</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.HiddenFor(model => model.PaymentDateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                
+                @Html.HiddenFor(model => model.PaymentDateTime, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PaymentDateTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.HiddenFor(model => model.CustomerId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.CustomerId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>@Html.LabelFor(model => model.CustomerName, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+            
+            <div class="col-md-10">
+                @Model.CustomerName
+                @Html.HiddenFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>@Html.LabelFor(model => model.CustomerPhoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })</strong> 
+            <div class="col-md-10">
+                @Model.CustomerPhoneNumber
+                @Html.HiddenFor(model => model.CustomerPhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CustomerPhoneNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.HiddenFor(model => model.PackageId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.PackageId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PackageId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>@Html.LabelFor(model => model.PackageName, htmlAttributes: new { @class = "control-label col-md-2" })</strong> 
+            <div class="col-md-10">
+                @Model.PackageName
+                @Html.HiddenFor(model => model.PackageName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PackageName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong>
+            <div class="col-md-10">
+                Rs. @Model.Amount
+                @Html.HiddenFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.NoOfGuests, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong>
+            <div class="col-md-10">
+                @Model.NoOfGuests Persone
+                @Html.HiddenFor(model => model.NoOfGuests, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NoOfGuests, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.GuestNames, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong> 
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.GuestNames, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GuestNames, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.StartDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong>
+            <div class="col-md-10">
+                @Model.StartDate
+                @Html.HiddenFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong>
+            <div class="col-md-10">
+                @Model.EndDate
+                @Html.HiddenFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <strong>
+                @Html.LabelFor(model => model.PickupPoint, htmlAttributes: new { @class = "control-label col-md-2" })
+            </strong>
+            <div class="col-md-10">
+                @Model.PickupPoint
+                @Html.HiddenFor(model => model.PickupPoint, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PickupPoint, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.HiddenFor(model => model.TicketNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.TicketNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TicketNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Proceed for Purchase" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+<br />
+<div style="margin-bottom:20px;">
+    @Html.ActionLink("Cancel", "Index", "User", null, new { @class = "btn btn-info" })
+</div>

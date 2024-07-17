@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Admin>
+
+@{
+    ViewBag.Title = "GetAdmin";
+    Layout = "~/Views/Shared/_Layout_List_AdminDashboard.cshtml";
+
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Html.Raw(TempData["SuccessMessage"])
+    </div>
+}
+<h2>Admin Details</h2>
+
+<table class="table table-bordered table-striped" style="background-color:lightblue">
+    <thead class="thead-dark" style="background-color: lightgrey; border: thick; text-align:center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminDesignation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdminName)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody style=" border: thick; text-align: center">
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdminDesignation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdminName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditAdmin", new { id = item.AdminId }) |
+                    @Html.ActionLink("Delete", "DeleteAdmin", new { id = item.AdminId })
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @Html.ActionLink("Back to Dashboard", "Index", null, new { @class = "btn btn-secondary" })
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

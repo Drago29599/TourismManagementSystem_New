@@ -1,0 +1,108 @@
+﻿@model TourismManagementSystem.Models.Package
+
+
+
+@{
+    ViewBag.Title = "BuyPackage";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+<h2>Buy Package</h2>
+
+<h3>Please proceed to purchase the Package</h3>
+<div>
+    <h4>Package</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfPeoples)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfPeoples)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupPoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupPoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destination)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destination)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("BuyPackageConfirmation", "User", new { id = Model.PackId }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+       
+        
+        <input type="submit" value="Proceed to Buy" class="btn btn-success" />
+        @Html.ActionLink("Cancel", "Index", "User", null, new { @class = "btn btn-info" })
+    }
+</div>

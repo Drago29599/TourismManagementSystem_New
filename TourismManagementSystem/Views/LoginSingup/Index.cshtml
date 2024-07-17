@@ -1,0 +1,67 @@
+﻿@model TourismManagementSystem.Models.Customer
+
+@{
+    ViewBag.Title = "Index";
+}
+@Html.Raw(TempData["LoginFailedMessage"])
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginSingup</title>
+    <link href="~/Assests/CustomCSS/UserLoginStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <div class="box">
+        <div class="container1" style="border: 1px solid rgba(255,255,255,0.5); border-radius: 10px; backdrop-filter: blur(5px); padding: 15px 15px 15px 15px;">
+            <div class="top-header">
+                <h3 style="text-align:center; color:white;">Welcome to Ocean Tourism</h3>
+                <hr style="color:white;"/>
+                <span style="">Customer Login</span>
+
+                @using (Html.BeginForm("Index", "LoginSingup", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group row " >
+                        @Html.LabelFor(model => model.CustomerName, htmlAttributes: new { @class = "control-label col-md-3 text-white" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row ">
+                        @Html.LabelFor(model => model.CustomerPassword, htmlAttributes: new { @class = "control-label col-md-3 text-white" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.CustomerPassword, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CustomerPassword, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-2" style="padding-left:138px">
+                            <input type="submit" value="Login" class="btn btn-primary" />
+                        </div>
+                        <h5 style="color:white; text-align:center; font-weight:200; margin-top:10px">@ViewBag.ErrorMessage</h5>
+                    </div>
+                    <hr style="color:white"/>
+                    <div class="form-horizontal text-center" >
+                        <h5 style="color:white">Not registered yet ?</h5>
+                        @Html.ActionLink(" Click here to register", "SingUp", null, new { @class = "btn btn-secondary" })
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+}
+
+
+

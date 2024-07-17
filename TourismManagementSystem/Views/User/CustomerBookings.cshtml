@@ -1,0 +1,82 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Payment>
+
+@{
+    ViewBag.Title = "CustomerBookings";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Html.Raw(TempData["SuccessMessage"])
+    </div>
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+
+    <h2 style="text-align:center; color:black; margin-bottom:20px;"><i class="fa fa-trophy" style="color:gold; margin-right:20px" aria-hidden="true"></i>My Bookings</h2>
+
+</head>
+<body>
+    <div class="container" style="margin-bottom:30px;">
+        <div class="col-md-12 offset-md-0">
+            <div class="card-deck">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 " style="border: thick; margin-bottom: 30px; ">
+                        <div class="card">
+                            <div class="card-header" style="text-align:center"><h5 class="card-title">TicketNumber: @Html.DisplayFor(modelItem => item.TicketNumber)</h5></div>
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <strong>Payment Date & Time:</strong> @Html.DisplayFor(modelItem => item.PaymentDateTime)<br />
+
+                                    <strong>Customer Name :</strong> @Html.DisplayFor(modelItem => item.CustomerName)<br />
+
+                                    <strong>Guest Name :</strong> @Html.DisplayFor(modelItem => item.GuestNames)<br />
+
+                                    <strong>Guest Contact Number :</strong> @Html.DisplayFor(modelItem => item.CustomerPhoneNumber)<br />
+
+                                    <strong>Package Name :</strong> @Html.DisplayFor(modelItem => item.PackageName)<br />
+
+                                    <strong>End Date :</strong> @Html.DisplayFor(modelItem => item.EndDate)<br />
+
+                                    <strong>Amount Paid :</strong> <i class='fas fa-rupee-sign' style='font-size:15px'></i> @Html.DisplayFor(modelItem => item.Amount)<br /><br />
+                                    <hr />
+                                    <i class='fas fa-calendar-check' style='font-size:15px;color:red; margin-right:10px'></i> <strong>Boarding Date :</strong> @Html.DisplayFor(modelItem => item.StartDate)<br />
+                                    <br />
+                                    <i class='fas fa-map-marker-alt' style='font-size: 15px; color: green; margin-right: 10px'></i> <strong> Boarding Point :</strong> @Html.DisplayFor(modelItem => item.PickupPoint)<br />
+
+                                </p>
+                                <hr />
+                                <!--Customer can only Cancel the booking before 48hrs/2days of start date -->
+                                @if (item.StartDate.Subtract(DateTime.Now).TotalDays >= 2)
+                                {
+                                    <div class="btn btn-danger" style="color:black">
+                                        @Html.ActionLink("Cancel Booking", "CancelBooking", new { id = item.PaymentId })
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                }
+            </div>
+
+        </div>
+        <br />
+        <div>
+            @Html.ActionLink("Back to Dashboard", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

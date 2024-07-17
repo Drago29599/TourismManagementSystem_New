@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "PaymentError";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+
+<div class="container-md" style="justify-content:center; width:600px; height:300px; ">
+    <img src="~/Assests/Images/Transaction-Failed.png" alt="alternate_text" style="height:200px; width:400px; margin-left:100px;" />
+    <h5 style="text-align:center; color:firebrick">Payment Failed Please try again !!</h5>
+    <p style="text-align:center;">Please check if the entered card details are correct or not!</p>
+    <div class="box" style=" text-align: center; ">
+        @Html.ActionLink("Back to main menu", "Index", "User", null, new { @class = "btn btn-secondary" })
+    </div>
+</div>
+
+

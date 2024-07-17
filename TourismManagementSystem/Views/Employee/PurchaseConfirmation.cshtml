@@ -1,0 +1,37 @@
+﻿@model TourismManagementSystem.Models.Payment
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_EmployeeDashboardLayout.cshtml";
+}
+
+
+<h2>Hi @Model.CustomerName</h2>
+<h2>Congratulations</h2>
+
+<p>Thank you for your purchase!</p>
+<p>Your payment has been successfully processed.</p>
+<p>We appreciate your business and hope you enjoy your package.</p>
+
+
+<p>Order details:</p>
+<ul>
+    <li><strong>Ticket Number: </strong> @Model.TicketNumber</li>
+    <li><strong>Package Name: </strong> @Model.PackageName</li>
+    <li><strong>No of Guests: </strong> @Model.NoOfGuests</li>
+    <li><strong>Guest's Names: </strong> @Model.GuestNames</li>
+    <li><strong>Customer Phone number: </strong> @Model.CustomerPhoneNumber</li>
+    <li><strong>Starting From:</strong> @Model.StartDate.ToString("dd/MM/yyyy") <strong>To : </strong>@Model.EndDate.ToString("dd/MM/yyyy") </li>
+    <li><strong>Pickup Point: </strong> @Model.PickupPoint</li>
+    <li><strong>Amount Paid: </strong>Rs @Model.Amount</li>
+    <li><strong>Payment Date:</strong> @Model.PaymentDateTime.ToString("dd/MM/yyyy") </li>
+    <li><strong>Payment time:</strong> @Model.PaymentDateTime.ToString("hh:mm tt") </li>
+
+
+</ul>
+
+<p>If you have any questions or need further assistance, please feel free to contact our support team.</p>
+
+<div>
+    @Html.ActionLink("Back to DashBoard", "Index", "Employee", null, new { @class = "btn btn-secondary" })
+</div>

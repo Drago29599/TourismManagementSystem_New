@@ -1,0 +1,105 @@
+﻿@model TourismManagementSystem.Models.Payment
+
+@{
+    ViewBag.Title = "CancelBooking";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+<h2>CancelBooking</h2>
+
+<h3>Are you sure you want to cancel Booking ?</h3>
+<div>
+    <h4>Bookings Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfGuests)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfGuests)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupPoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupPoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketNumber)
+        </dd>
+
+    </dl>
+   
+
+    @using (Html.BeginForm("CancelBookingConfirmed", "User", new { id = Model.PaymentId }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <input type="submit" value="Cancel Booking" class="btn btn-danger" />
+        @Html.ActionLink("Cancel", "CustomerBookings", null, new { @class = "btn btn-secondary" })
+    }
+</div>

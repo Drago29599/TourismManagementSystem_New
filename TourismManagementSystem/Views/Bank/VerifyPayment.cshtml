@@ -1,0 +1,76 @@
+﻿@model TourismManagementSystem.Models.Account
+
+@{
+    ViewBag.Title = "VerifyPayment";
+    Layout = "~/Views/Shared/_LayoutUserDashboard.cshtml";
+}
+
+@using (Html.BeginForm("VerifyPayment", "Bank", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+   
+    <h4><i class="fa fa-university" style="font-size:35px; color:black; margin-right:10px" aria-hidden="true"></i>Payment Page</h4>
+    <p style="color:darkred;">Please enter all details correctly for seamless performance and a successful payment.</p>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<div class="form-group">
+    
+    <label style="margin-left:12px;"><i class="fa fa-credit-card" aria-hidden="true" style="margin-right:10px;"></i>Card Number</label>
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.CardNumber, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CardNumber, "", new { @class = "text-danger" })
+        <p style="color:darkred; margin-top:1px;">(Please enter 16 digits Card No.)*</p>
+    </div>
+</div>
+
+    <div class="form-group">
+        <label style="margin-left:12px;">Card Holder Name</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AccountHolderName, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AccountHolderName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CardType, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.CardType, new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Debit", Value = "Debit" },
+                new SelectListItem { Text = "Credit", Value = "Credit" }
+            }, "Value", "Text"), "Select Card Type", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.CardType, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label style="margin-left:12px;">CVV Number</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" name="CCVNumber" />
+            @Html.ValidationMessageFor(model => model.CCVNumber, "", new { @class = "text-danger" })
+            <p style="color:darkred; margin-top:1px;">(Please enter 3 digits Card CVV No.)*</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label style="margin-left:12px;">Card PIN Number</label>
+        <div class="col-md-10">
+            <input type="password" class="form-control" name="CardPin" />
+            @Html.ValidationMessageFor(model => model.CardPin, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Pay Now" class="btn btn-success" />
+            @Html.ActionLink("Cancel", "Index", "User", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</div>
+}
+
+<div>
+   
+</div>

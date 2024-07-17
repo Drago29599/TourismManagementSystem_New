@@ -1,0 +1,86 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Employee>
+
+@{
+    ViewBag.Title = "GetEmployee";
+    Layout = "~/Views/Shared/_Layout_List_AdminDashboard.cshtml";
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @Html.Raw(TempData["SuccessMessage"])
+    </div>
+}
+
+<h2>GetEmployee</h2>
+
+<p>
+    @Html.ActionLink("Add New Employee", "AddEmployee", null, new { @class = "btn btn-success" })
+</p>
+<table class="table table-bordered " style=" text-align: center; border: thick ">
+    <thead class="thead-dark" style=" background-color: lightgrey; ">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeePass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpPhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmpResidentialAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeePass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpPhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpResidentialAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditEmployee", "Employee", new { id = item.EmployeeId }, null) |
+                @Html.ActionLink("Delete", "DeleteEmployee", "Employee", new { id = item.EmployeeId }, null)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Dashboard", "Index", "AdminDashboard", null, new { @class = "btn btn-secondary" })
+</div>

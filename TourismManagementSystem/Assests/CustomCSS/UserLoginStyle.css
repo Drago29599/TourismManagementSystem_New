@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url('../images/userlogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container1 {
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+span {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+    padding: 10px 0 10px 0;
+}

@@ -1,0 +1,114 @@
+﻿@model TourismManagementSystem.Models.Admin
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Assests/CustomCSS/UserLoginStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="box">
+        <div class="container1" style="border: 1px solid rgba(255,255,255,0.5); border-radius: 10px; backdrop-filter: blur(5px); padding: 15px 15px 15px 15px;">
+            <div class="top-header">
+                <h3 style="text-align:center; color:white;">Welcome to Ocean Tourism</h3>
+                <hr style="color:white;" />
+                <span style="">Admin Login</span>
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.AdminName, htmlAttributes: new { @class = "control-label col-md-3 text-white" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.AdminName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.AdminName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        @Html.LabelFor(model => model.AdminPassword, htmlAttributes: new { @class = "control-label col-md-3 text-white" })
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.AdminPassword, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.AdminPassword, "", new { @class = "text-danger" })
+
+                        </div>
+
+                        <div class="col-md-2" style="padding-left:138px; ">
+                            <input type="submit" value="Login" class="btn btn-primary" />
+                        </div>
+                        
+                        <h5 style="color:white; text-align:center; font-weight:200; margin-top:10px">@ViewBag.ErrorMessage</h5>
+                    </div>
+                    <hr style="color:white" />
+                    <div class="form-horizontal text-center">
+                        <h6 style="color:white">Not a Admin, Please go to customer login</h6>
+                        @Html.ActionLink("Click here for Customer Login", "Index", "LoginSingup", null, new { @class = "btn btn-secondary" })
+                    </div>
+                        }
+
+                    </div>
+                </div>
+    </div>
+</body>
+</html>
+@*
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h2 class="card-header text-center">Admin Login</h2>
+
+                        <div class="form-horizontal text-center">
+                            <h4>Welcome to Ocean tourism</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group row align-items-center">
+                                @Html.LabelFor(model => model.AdminName, htmlAttributes: new { @class = "control-label col-md-4 text-right" })
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.AdminName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.AdminName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group row">
+                                @Html.LabelFor(model => model.AdminPassword, htmlAttributes: new { @class = "control-label col-md-4 text-right" })
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.AdminPassword, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.AdminPassword, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Login" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-horizontal text-center">
+                            <div class="card-footer">
+                                <div>
+                                    <h6>Not a Admin, Please go to customer login</h6>
+                                    @Html.ActionLink("Click here for Customer Login", "Index", "LoginSingup", null, new { @class = "btn btn-info" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+*@

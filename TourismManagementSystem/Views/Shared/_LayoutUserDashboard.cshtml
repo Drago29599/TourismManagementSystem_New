@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - </title>
+    <!-- Custom fonts for this template-->
+    <link href="~/Assests/AdminDashboard/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="~/Assests/AdminDashboard/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container-footer {
+            max-width: 1170px;
+            margin: auto;
+        }
+        .footer .container-footer .row {
+            list-style: none;
+            margin:0;
+
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: #24262b;
+            padding: 70px 0;
+            height:350px;
+
+        }
+
+        .footer .col-md-3 {
+            width:25%;
+            padding: 0 15px;
+        }
+            .footer .col-md-3 h4 {
+                font-size: 18px;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-left: 30px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                position: relative;
+            }
+
+                .footer .col-md-3 h4::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    background-color: #e91e63;
+                    height: 2px;
+                    box-sizing: border-box;
+                    width: 50px;
+                }
+            .footer .col-md-3 ul li {
+                margin-bottom: 10px;
+            }
+                .footer .col-md-3 ul li a {
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 300;
+                    color: #bbbbbb;
+                    display: block;
+                    transition: all 0.3s ease;
+                }
+                    .footer .col-md-3 ul li a:hover {
+                        color: #ffffff;
+                        padding-left: 8px;
+                    }
+
+            .footer .col-md-3 .social-links a {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: rgba(255,255,255,0.2);
+                margin: 0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #ffffff;
+            }
+
+                .footer .col-md-3 .social-links a:hover {
+                    color: #24262b;
+                    background: #ffffff;
+                }
+        .footer h5{
+            text-align:center;
+            font-size:15px;
+            margin-left:80%;
+            color: #ffffff;
+            font-weight:200;
+            margin-top:30px;
+        }
+    </style>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top " style="background-color: #e3f2fd; ">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="d-flex justify-content-start" style="font-weight:600; margin-left:20px;">
+            @Html.ActionLink("Ocean Tourism", "Index", "User", new { area = "" }, new { @class = "navbar-brand" })
+
+        </div>
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+              method="post" action="@Url.Action("Index", "User")#package_content">  
+            <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" name="searchStr" value="@ViewBag.SearchStr"
+                       placeholder="Search for Packages" aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search fa-sm"></i>
+                    </button>
+                </div>
+            </div>
+            <input type="hidden" name="pg" value="@ViewBag.pageNumber" />
+        </form>
+
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                     aria-labelledby="searchDropdown">
+                    <form class="form-inline mr-auto w-100 navbar-search" method="post" action="@Url.Action("Index", "User")#package_content">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" name="searchStr" value="@ViewBag.SearchStr"
+                                   placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="pg" value="@ViewBag.pageNumber" />
+                    </form>
+                </div>
+            </li>
+            <li style="padding-right: 35px; margin-top: 15px;">@Html.ActionLink("Home", "Index", "User", new { area = "" }, new { @class = "nav-link" })</li>
+
+            <li style="padding-right: 35px; margin-top: 15px;">@Html.ActionLink("Contact", "Contact", "User", new { area = "" }, new { @class = "nav-link" })</li>
+            <li style="padding-right: 35px; margin-top: 15px;">@Html.ActionLink("MyBookings", "CustomerBookings", "User", null, new { @class = "nav-link" })</li>
+
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell fa-fw" style="color: black; font-size: 20px"></i>
+                    <!-- Counter - Alerts -->
+                    <span class="badge badge-danger badge-counter ">3+</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                     aria-labelledby="alertsDropdown">
+                    <h6 class="dropdown-header">
+                        Alerts Center
+                    </h6>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary">
+                                <i class="fas fa-file-alt text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div>
+                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success">
+                                <i class="fas fa-donate text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>
+                            $290.29 has been deposited into your account!
+                        </div>
+                    </a>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning">
+                                <i class="fas fa-exclamation-triangle text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>
+                            Spending Alert: We've noticed unusually high spending for your account.
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+            </li>
+
+
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline small" style="color:black; font-size:18px; padding-right:10px"> @Session["UserName"]</span>
+                    <img class="img-profile rounded-circle"
+                         src="~/Assests/AdminDashboard/img/undraw_profile.svg">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                     aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="@Url.Action("GetUserById", "User")">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a> @Html.ActionLink("Logout", "Logout", "User", null, new { @class = "btn btn-primary" })</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        
+    </div>
+    <footer class="footer" style="margin-top:20px;">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affliliate programe</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Cancellation policies</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Travel Options</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Countries to Travel</h4>
+                    <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">UK</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow us</h4>
+                    <div class="social-links" style="margin-left:23px">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h5>&copy; @DateTime.Now.Year - Ocean Tourism</h5>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Assests/AdminDashboard/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Assests/AdminDashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/Assests/AdminDashboard/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/Assests/AdminDashboard/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="~/Assests/AdminDashboard/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="~/Assests/AdminDashboard/js/demo/chart-area-demo.js"></script>
+    <script src="~/Assests/AdminDashboard/js/demo/chart-pie-demo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

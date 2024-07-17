@@ -1,0 +1,447 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\MyGraduationProject\\TourismManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tmsbankwebapiservice\\controllers\\bankapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\controllers\\bankapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tmsbankwebapiservice\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|f:\\mygraduationproject\\tourismmanagementsystem\\tmsbankwebapiservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|f:\\mygraduationproject\\tourismmanagementsystem\\tmsbankwebapiservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tmsbankwebapiservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|f:\\mygraduationproject\\tourismmanagementsystem\\tourismmanagementsystem\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\admindashboard\\editadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\admindashboard\\editadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\admindashboard\\getadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\admindashboard\\getadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\loginsingup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\loginsingup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\loginsingupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\loginsingupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\home\\customerlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\home\\customerlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\adminlogin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\adminlogin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\shared\\_admindashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\shared\\_admindashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\admindashboard\\getbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\admindashboard\\getbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tmsbankwebapiservice\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C83D8EF3-DEF0-4899-AC46-CCF78098B767}|TMSBankWebAPIService\\TMSBankWebAPIService.csproj|solutionrelative:tmsbankwebapiservice\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\bankcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\controllers\\packagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\controllers\\packagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|F:\\MyGraduationProject\\TourismManagementSystem\\tourismmanagementsystem\\views\\shared\\_employeedashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0C5E9AE6-591E-42E3-9F21-C077408295F0}|TourismManagementSystem\\TourismManagementSystem.csproj|solutionrelative:tourismmanagementsystem\\views\\shared\\_employeedashboardlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Global.asax.cs",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\Global.asax.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Global.asax.cs",
+              "RelativeToolTip": "TMSBankWebAPIService\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T17:40:32.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "packages.config",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\packages.config",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\packages.config",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\packages.config",
+              "RelativeToolTip": "TMSBankWebAPIService\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-07-17T17:40:30.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\AdminDashboard\\Index.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\AdminDashboard\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-01T17:28:52.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminLogin\\Index.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\AdminLogin\\Index.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminLogin\\Index.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\AdminLogin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-01T17:11:54.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\App_Start\\RouteConfig.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "TMSBankWebAPIService\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBIAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T05:41:01.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BankAPIController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Controllers\\BankAPIController.cs",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\Controllers\\BankAPIController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Controllers\\BankAPIController.cs",
+              "RelativeToolTip": "TMSBankWebAPIService\\Controllers\\BankAPIController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T05:41:24.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetBooking.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\GetBooking.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\AdminDashboard\\GetBooking.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\GetBooking.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\AdminDashboard\\GetBooking.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-01T17:29:33.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwEEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-02T05:13:05.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminDashboardController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\AdminDashboardController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowFYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-07-11T06:26:10.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Web.config",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\Web.config",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\Web.config",
+              "RelativeToolTip": "TMSBankWebAPIService\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-01T05:49:38.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\LoginSingup\\Index.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\LoginSingup\\Index.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\LoginSingup\\Index.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\LoginSingup\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-02T06:08:57.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetAdmin.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\GetAdmin.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\AdminDashboard\\GetAdmin.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\GetAdmin.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\AdminDashboard\\GetAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-04T07:42:08.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditAdmin.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\EditAdmin.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\AdminDashboard\\EditAdmin.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\AdminDashboard\\EditAdmin.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\AdminDashboard\\EditAdmin.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-04T08:12:46.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginSingupController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\LoginSingupController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\LoginSingupController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\LoginSingupController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\LoginSingupController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T05:43:30.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerLogin.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Home\\CustomerLogin.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\Home\\CustomerLogin.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Home\\CustomerLogin.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\Home\\CustomerLogin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-06-02T06:08:07.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T06:08:24.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminLoginController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\AdminLoginController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\AdminLoginController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\AdminLoginController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\AdminLoginController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T17:07:20.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_AdminDashboardLayout.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_AdminDashboardLayout.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\Shared\\_AdminDashboardLayout.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_AdminDashboardLayout.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\Shared\\_AdminDashboardLayout.cshtml",
+              "ViewState": "AQIAAGgBAAAAAAAAAAAgwG4BAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2023-07-28T10:42:03.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "TMSBankWebAPIService\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TMSBankWebAPIService\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "TMSBankWebAPIService\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T05:45:00.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BankController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\BankController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\BankController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\BankController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\BankController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwB0AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T05:40:33.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\EmployeeController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:30:13.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\Home\\About.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-04-30T11:27:57.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Web.config",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Web.config",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Web.config",
+              "RelativeToolTip": "TourismManagementSystem\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-12-04T06:29:53.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PackageController.cs",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\PackageController.cs",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Controllers\\PackageController.cs",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Controllers\\PackageController.cs",
+              "RelativeToolTip": "TourismManagementSystem\\Controllers\\PackageController.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAmwLYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-07-11T06:26:56.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\User\\Index.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwEAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2023-07-10T12:59:41.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_EmployeeDashboardLayout.cshtml",
+              "DocumentMoniker": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_EmployeeDashboardLayout.cshtml",
+              "RelativeDocumentMoniker": "TourismManagementSystem\\Views\\Shared\\_EmployeeDashboardLayout.cshtml",
+              "ToolTip": "F:\\MyGraduationProject\\TourismManagementSystem\\TourismManagementSystem\\Views\\Shared\\_EmployeeDashboardLayout.cshtml",
+              "RelativeToolTip": "TourismManagementSystem\\Views\\Shared\\_EmployeeDashboardLayout.cshtml",
+              "ViewState": "AQIAADgBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2023-07-10T12:59:19.702Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

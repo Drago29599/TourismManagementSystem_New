@@ -1,0 +1,292 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Assests/CustomCSS/style.css">
+    <link href="~/Assests/CustomCSS/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="content" style="margin-top:15px;">
+                <div class="cont-bx">
+                    <h1>Inspiring destinations within your reach.</h1>
+                    <p>Travel with ocean & let us be your travel companion.</p>
+                </div>
+
+                <div id="tag1" class="container text-center" style="margin-top: 20px; margin-bottom:15px">
+                    <h1 style="color:black; font-weight:400;">Explore the countries with us...</h1>
+                    <h3>100+ countries...     2165+ Happy costomers...</h3>
+                </div>
+            </div>
+            <div id="cards" class="d-flex" style="margin-top:90px">
+                <div class="card" id="Section_1_card" style="width: 18rem;">
+                    <img src="~/Assests/Images/Londan bridge.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">UK Londan</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Know more</a>
+                    </div>
+                </div>
+                <!-- Modal 1 -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Please login for additional information</h1>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Get exciting offers & deals !!... </p>
+                                <p>Get more amazing packages..</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    @Html.ActionLink("Customer Login", "Index", "loginSingup", new { area = "" }, new { @class = "nav-link" })
+                                </button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="Section_1_card" style="width: 18rem;">
+                    <img src="~/Assests/Images/sydney-australia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Australia</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Know more</a>
+                    </div>
+                </div>
+                <div class="card" id="Section_1_card" style="width: 18rem;">
+                    <img src="~/Assests/Images/MP_Ind.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Know more</a>
+                    </div>
+                </div>
+                <div class="card" id="Section_1_card" style="width: 18rem;">
+                    <img src="~/Assests/Images/USA_city.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> USA America</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Know more</a>
+                    </div>
+                </div>
+
+                <!-- Add more cards here as needed -->
+            </div>
+
+            <div id="feature-section" style="padding-top:50px">
+                <h1 class="feature-section-title" style="width: 70%; margin:auto; text-align: center; font-weight: 300; font-size:25px; color:black;">
+                    Discover breathtaking destinations,
+                    unleash your wanderlust, and create lifelong memories.
+                    Experience the magic of Ocean Tourism now!
+                </h1>
+                <div class="feature-content">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="~/Assests/Images/Ocean.jpeg" style="" />
+                            <h3>Oceans & beachs </h3>
+                            <p>
+                                Dive into the mesmerizing wonders of the ocean and unwind on the pristine sandy beaches.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="~/Assests/Images/Mountains_img1.jpg" style="" />
+                            <h3>Peacefull Mountains</h3>
+                            <p>
+                                Dive into the mesmerizing wonders of the ocean and unwind on the pristine sandy beaches.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="~/Assests/Images/Forest_1.jpg" style="" />
+                            <h3>Amazing Forests</h3>
+                            <p>
+                                Dive into the mesmerizing wonders of the ocean and unwind on the pristine sandy beaches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--End of feature section-->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Imperial Tokyo, Japan</h5>
+                            <p>
+                                Imperial Tokyo offers a captivating blend of historic landmarks, exquisite gardens,
+                                and vibrant cityscapes that immerse visitors in the rich cultural tapestry of Japan's capital.
+                            </p>
+                        </div>
+                        <img src="~/Assests/Images/Carousel_6.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Assests/Images/Carousel_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kacch of Gujrat, India</h5>
+                            <p>
+                                The Kutch region of Gujrat, India, is a captivating desert expanse adorned with intricate handicrafts,
+                                vibrant textiles, and a vibrant cultural tapestry that showcases the enduring heritage of the land.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Assests/Images/Carousel_5.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Field, AB, Canada</h5>
+                            <p>
+                                Field, AB, Canada, is a hidden gem nestled amidst breathtaking mountain vistas,
+                                offering a serene and idyllic escape for nature enthusiasts, with its pristine wilderness,
+                                charming small-town charm, and abundant opportunities for outdoor adventure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> <!--End of carousel-->
+            <div id="showcase1-container">
+                <h1 class="feature-section-title" style="width: 70%; margin:auto; text-align: center; font-weight:500; font-size:25px; color:black;">
+                    Travel Diaries: Captivating Stories from the Road..!<br />
+                    Travel Adventures: Tales from Around the Globe
+                </h1>
+                <div class="showcase">
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-6">
+                            <img class="showcasePic1" src="~/Assests/Images/Showcase_1.jpg" />
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-text">
+                                <h1 class="feature-title">Exploring the Wonders of Desert Trekking</h1>
+                                <p>
+                                    Dessert Trekking: A Journey of Endless Dunes and Unforgettable Adventures.
+                                    Embark on a remarkable quest through vast desert landscapes,
+                                    where shifting sands and captivating horizons create an enchanting experience.
+                                    Immerse yourself in rich cultural traditions, marvel at breathtaking vistas,
+                                    and let desert trekking ignite your spirit of exploration.
+                                </p>
+                            </div> <!--End of feature text-->
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="row" style="margin-top: 20px">
+
+                        <div class="col-6">
+                            <div class="feature-text">
+                                <h1 class="feature-title">Leh Ladakh: A Himalayan Paradise Beckons</h1>
+                                <p>
+                                    landscapes of the Himalayas, Leh Ladakh is a mystical destination that captivates every traveler's heart.
+                                    With its majestic snow-capped mountains,
+                                    serene lakes, and ancient monasteries, this region offers a truly immersive experience.
+                                </p>
+                            </div> <!--End of feature text-->
+                        </div>
+                        <div class="col-6">
+                            <img class="showcasePic1" src="~/Assests/Images/leh_ladakha_1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-6">
+                            <img class="showcasePic1" src="~/Assests/Images/Kerela_1.jpg" />
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-text">
+                                <h1 class="feature-title">Kerala: The Enchanting Gem of South India</h1>
+                                <p>
+
+                                    Discover the enchanting beauty of Kerala, a land of pristine backwaters, lush greenery,
+                                    and rich cultural heritage.
+                                    Immerse yourself in the breathtaking tea plantations of Munnar, surrounded by mist-covered mountains.
+                                    Indulge in the vibrant traditions of Kathakali dance performances and Ayurvedic spa treatments.
+                                </p>
+                            </div> <!--End of feature text-->
+                        </div>
+                    </div>
+                </div>
+            </div><!--End of the showcase section-->
+
+        </header>
+    </div>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Affliliate programe</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Cancellation policies</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                            <li><a href="#">Travel Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Countries to Travel</h4>
+                        <ul>
+                            <li><a href="#">India</a></li>
+                            <li><a href="#">America</a></li>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">UK</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow us</h4>
+                        <div class="social-links" style="margin-left:23px">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <h5>&copy; @DateTime.Now.Year - Ocean Tourism</h5>
+        </footer>
+    
+    <script>
+        // JavaScript code to enable automatic image rotation every 5 seconds
+        var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleDark'), {
+            interval: 5000 // Set the interval (in milliseconds) for automatic rotation (changed to 5000)
+        });
+    </script>
+</body>
+</html>
+
+

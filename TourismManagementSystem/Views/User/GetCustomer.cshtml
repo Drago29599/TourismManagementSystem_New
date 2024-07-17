@@ -1,0 +1,102 @@
+﻿@model IEnumerable<TourismManagementSystem.Models.Customer>
+
+@{
+    ViewBag.Title = "GetCustomer";
+    if (ViewBag.Role == "Admin")
+    {
+        Layout = "~/Views/Shared/_Layout_List_AdminDashboard.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_EmployeeDashboardLayout.cshtml";
+    }
+}
+<link href="~/Assests/CustomCSS/Pagination.css" rel="stylesheet" />
+
+<h2>Customer Details</h2>
+<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+      method="get" action="@Url.Action("GetCustomer", "User")" >
+    <div class="input-group" >
+        <input type="text" class="form-control border-0 small" name="searchStr" value="@ViewBag.SearchStr"
+               placeholder="Search for Customer.!" aria-label="Search" aria-describedby="basic-addon2" style="background-color: #ffe6ff; ">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search fa-sm"></i>
+            </button>
+        </div>
+    </div>
+    <input type="hidden" name="pg" value="@ViewBag.pageNumber" />
+</form>
+<table class="table table-bordered " style="font-size:15px;margin-top:20px; ">
+    <thead class="thead-dark" style="background-color:white; border: thick; text-align:center">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerEmailId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerAdress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody style=" border: thick; ">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerEmailId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerPhone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerAdress)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditCustomer", "Employee", new { id = item.CustomerId }, null)
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!--Pagination-->
+<div class="pagination" style=" margin-right:20px; justify-content:end;">
+    @if (ViewBag.pageNumber > 1)
+    {
+        <a href="@Url.Action("GetCustomer", new { page = ViewBag.pageNumber - 1,searchStr = ViewBag.SearchString  })" class="page-link">Previous</a>
+    }
+
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        if (i == ViewBag.pageNumber)
+        {
+            <a href="@Url.Action("GetCustomer", new { page = i,searchStr = ViewBag.SearchString })" class="page-link active">@i</a>
+        }
+        else
+        {
+            <a href="@Url.Action("GetCustomer", new { page = i,searchStr = ViewBag.SearchString })" class="page-link">@i</a>
+        }
+    }
+
+    @if (ViewBag.pageNumber < ViewBag.TotalPages)
+    {
+        <a href="@Url.Action("GetCustomer", new { page = ViewBag.pageNumber + 1,searchStr = ViewBag.SearchString })" class="page-link">Next</a>
+    }
+</div>
