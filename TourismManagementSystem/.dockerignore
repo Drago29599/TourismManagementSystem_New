@@ -1,3 +1,6 @@
+# Ignore everything
 *
-!obj\Docker\publish\*
-!obj\Docker\empty\
+
+# But not these directories
+!obj/Docker/publish/**
+!obj/Docker/empty/**
